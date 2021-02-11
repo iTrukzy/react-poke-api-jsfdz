@@ -34,6 +34,9 @@ h1 {
 
 .PokeApp h1 {
   width: 100%;
+  font-weight: 900;
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 1px #fff;
   padding-top: 30px;
   margin-top: 0;
   text-align: center;
@@ -83,7 +86,7 @@ h1 {
 .PokeApp .search-icon:before {
   content: '\f002';
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
   left: 15px;
   top: -3px;
   right: 15px;
@@ -123,6 +126,7 @@ h1 {
   vertical-align: middle;
   cursor: pointer;
   margin-right: 10px;
+  box-shadow: 0 3px 15px rgb(100 100 100 / 50%);
 }
 
 .PokeApp label.check small {
@@ -168,6 +172,7 @@ h1 {
   background: #fff;
   overflow: hidden;
   border-radius: 20px;
+  box-shadow: 0 3px 15px rgb(100 100 100 / 50%);
 }
 
 .PokeApp select {
