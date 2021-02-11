@@ -53,7 +53,7 @@ function App() {
     },
 
     getValue = (e) => {
-      setValue(e.target.value)
+      setValue(e.target.value.toLowerCase())
       setErrorMsg('')
     },
 
