@@ -20,14 +20,14 @@ function App() {
   useEffect(() => {
     const
       getPokemonName = async (query) => {
-        fetch(`${BASE}pokemon/${query}`)
+        await fetch(`${BASE}pokemon/${query}`)
           .then(response => response.ok ? response.json() : Promise.reject(response))
           .then(data => setOnePoke([data]))
           .catch(error => error.status === 404 ? setErrorMsg('No results found with that pokemon name or id') : console.error(error))
       },
 
       getPokemonType = async (query) => {
-        fetch(`${BASE}type/${query}`)
+        await fetch(`${BASE}type/${query}`)
           .then(response => response.ok ? response.json() : Promise.reject(response))
           .then(data => setPokes(data.pokemon.slice(0, amount)))
           .catch(error => error.status === 404 ? setErrorMsg('No results found with that type of pokemon or id') : console.error(error))
